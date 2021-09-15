@@ -19,7 +19,7 @@ spec:
         serviceAccountName: build-bot
         params:
           - name: app-name
-            value: express-sample-app
+            value: next-sample-app
           - name: source-repo
             value: $(tt.params.source-repo)  # use value from trigger event
           - name: sha                        # introduce new param
