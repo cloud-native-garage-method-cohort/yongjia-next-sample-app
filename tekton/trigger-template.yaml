@@ -3,6 +3,11 @@ kind: TriggerTemplate
 metadata:
   name: vcs-trigger
 spec:
+  params:
+    - name: source-repo
+      description: Source code repository
+    - name: sha
+      description: Precise SHA of the commit to build
   resourcetemplates:
     - apiVersion: tekton.dev/v1beta1
       kind: PipelineRun
