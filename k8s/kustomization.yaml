@@ -9,10 +9,3 @@ commonLabels:
   app.kubernetes.io/instance: yongjia-nextjs-sample-app
   app.kubernetes.io/name: yongjia-nextjs-sample-app
   app.openshift.io/runtime: js
-images:
-- name: '*'
-  newName: quay.io/yong_jia_chan_ibm/next-sample-app
-  newTag: "123"
-commonAnnotations:
-  app.openshift.io/vcs-ref: "23"
-  app.openshift.io/vcs-uri: https://github.com/cloud-native-garage-method-cohort/yongjia-next-sample-app.git
